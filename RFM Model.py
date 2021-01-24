@@ -70,4 +70,4 @@ df_RFM_SUM = df_RFM_Clean.groupby('RFMScore').agg({'CustomerID': lambda y: len(y
 df_RFM_SUM = df_RFM_SUM.sort_values('RFMScore', ascending=False)
 
 # Write results into CSV file
-df_RFM_SUM.to_csv('xyz')
+df_RFM_SUM.to_csv('xyz.csv')
